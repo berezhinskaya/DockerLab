@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  web:
+    image: likullla/mysimpleapp:v2
+    build: 
+      context: ./MySimpleApp
+      dockerfile: Dockerfile
+    container_name: mysimpleapp-web-1
+    ports:
+      - "8081:8080" 
+    restart: always
